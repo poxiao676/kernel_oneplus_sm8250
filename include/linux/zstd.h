@@ -255,7 +255,8 @@ typedef ZSTD_CStream zstd_cstream;
  * Return:   A lower bound on the size of the workspace that is passed to
  *           zstd_init_cstream().
  */
-size_t zstd_cstream_workspace_bound(const zstd_compression_parameters *cparams);
+//size_t zstd_cstream_workspace_bound(const zstd_compression_parameters *cparams);
+size_t zstd_cstream_workspace_bound(const ZSTD_compressionParameters* cParams);
 
 /**
  * zstd_init_cstream() - initialize a zstd streaming compression context
