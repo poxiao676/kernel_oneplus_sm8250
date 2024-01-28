@@ -3926,7 +3926,8 @@ backout_unlocked:
 u32 hugetlb_fault_mutex_hash(struct hstate *h, struct address_space *mapping,
 			    pgoff_t idx, unsigned long address)
 {
-	unsigned long key[2];
+//	unsigned long key[2];
+    u32 key[2];
 	u32 hash;
 
 	key[0] = (unsigned long) mapping;
